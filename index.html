@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -9,13 +9,166 @@
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME CSS -->
-<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+	 <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
      <!-- FLEXSLIDER CSS -->
-<link href="assets/css/flexslider.css" rel="stylesheet" />
+	<link href="assets/css/flexslider.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />    
-  <!-- Google	Fonts -->
+  	<!-- Google	Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+
+  <!--<SCRIPT LANGUAGE="javascript">
+    // Fonction de désactivation de l'affichage des "tooltips"
+    function desactivateCorrection() {
+      var correction = document.querySelectorAll('.correction'),
+          correctionLength = correction.length;
+
+      for (var i = 0; i < correctionLength; i++) {
+          correction[i].style.display = 'none';
+      }
+    }
+    // La fonction pour récupérer la "correction" correspondante à notre input
+    function getCorrection(elements) {
+      while (elements = elements.nextSibling) {
+          if (elements.className === 'correction') {
+              return elements;
+          }
+      }
+      return false;
+    }
+   // Fonctions de vérification du formulaire, elles renvoient "true" si tout est ok
+    var check = {}; // On met toutes nos fonctions dans un objet littéral
+
+    check['email'] = function() {
+      var email = document.getElementsById('email'),
+          correctionStyle = getCorrection(email).style;
+
+      if (email.includes("@")&& email.includes(".")) {
+          email.className = 'correct';
+          correctionStyle.display = 'none';
+          return true;
+      } else {
+          email.className = 'incorrect';
+          correctionStyle.display = 'inline-block';
+          return false;
+      }
+
+    };
+
+    check['password'] = function() {
+      var password = document.getElementById('password'),
+          correctionStyle = getCorrection(password).style;
+
+      if (password.value.length >= 6) {
+          password.className = 'correct';
+          correctionStyle.display = 'none';
+          return true;
+      } else {
+          password.className = 'incorrect';
+          correctionStyle.display = 'inline-block';
+          return false;
+      }
+    };
+
+
+    check['prenom'] = function() {
+      var prenom = document.getElementById('prenom'),
+          correctionStyle = getCorrection(prenom).style;
+
+      if (prenom.value.length >= 6) {
+          prenom.className = 'correct';
+          correctionStyle.display = 'none';
+          return true;
+      } else {
+          prenom.className = 'incorrect';
+          correctionStyle.display = 'inline-block';
+          return false;
+      }
+    };
+
+    check['prenom'] = check['nom'] = check['pseudo']; // La fonction pour le prénom est la même que celle du nom
+
+    check['password2'] = function() {
+        var pwd1 = document.getElementById('password'),
+            pwd2 = document.getElementById('password2'),
+            correctionStyle = getCorrection(pwd2).style;
+
+        if (pwd1.value == pwd2.value && pwd2.value != '') {
+            pwd2.className = 'correct';
+            tooltipStyle.display = 'none';
+            return true;
+        } else {
+            pwd2.className = 'incorrect';
+            tooltipStyle.display = 'inline-block';
+            return false;
+        }
+    };
+
+    (function() { // Utilisation d'une IIFE pour éviter les variables globales.
+      var myForm1 = document.getElementById('form1'),
+          myForm2 = document.getElementById('form2'),
+          inputs = document.querySelectorAll('input[type=text], input[type=password]'),
+          inputsLength = inputs.length;
+
+      for (var i = 0; i < inputsLength; i++) {
+          inputs[i].addEventListener('keyup', function(e) {
+              check[e.target.id](e.target.id); // "e.target" représente l'input actuellement modifié
+          });
+      }
+
+      myForm1.addEventListener('submit', function(e) {
+
+          var result = true;
+
+          for (var i in check) {
+              result = check[i](i) && result;
+          }
+
+          if (result) {
+              alert('Le formulaire est bien rempli.');
+          }
+
+          e.preventDefault();
+
+      });
+
+      myForm1.addEventListener('reset', function() {
+
+          for (var i = 0; i < inputsLength; i++) {
+              inputs[i].className = '';
+          }
+
+          deactivateTooltips();
+
+      });
+
+      myForm2.addEventListener('submit', function(e) {
+
+          var result = true;
+
+          for (var i in check) {
+              result = check[i](i) && result;
+          }
+
+          if (result) {
+              alert('Le formulaire est bien rempli.');
+          }
+
+          e.preventDefault();
+
+      });
+
+      myForm2.addEventListener('reset', function() {
+
+          for (var i = 0; i < inputsLength; i++) {
+              inputs[i].className = '';
+          }
+
+          deactivateTooltips();
+
+      });
+    })();
+  </SCRIPT>-->
 </head>
 <body >
    
@@ -53,19 +206,19 @@
                     <ul class="slides move-me">
                         <!-- Slider 01 -->
                         <li>
-                              <h3>Delivering Quality Education</h3>
-                           <h1>THE UNIQUE METHOD</h1>
-                            <a  href="#features-sec" class="btn btn-info btn-lg" >
-                                GET AWESOME 
+                      		<h3>Une éducation de qualité</h3>
+                           	<h1>La Méthode unique</h1>
+                            <a  href="#ancien" class="btn btn-info btn-lg" >
+                                DEJA MEMBRE 
                             </a>
-                             <a  href="#features-sec" class="btn btn-success btn-lg" >
-                                FEATURE LIST
+                             <a  href="#nouveau" class="btn btn-success btn-lg" >
+                                PREMIERE VISITE
                             </a>
                         </li>
                         <!-- End Slider 01 -->
                         
                         <!-- Slider 02 -->
-                        <li>
+                        <!--<li>
                             <h3>Delivering Quality Education</h3>
                            <h1>UNMATCHED APPROACH</h1>
                              <a  href="#features-sec" class="btn btn-primary btn-lg" >
@@ -74,11 +227,11 @@
                              <a  href="#features-sec" class="btn btn-danger btn-lg" >
                                 FEATURE LIST
                             </a>
-                        </li>
+                        </li>-->
                         <!-- End Slider 02 -->
                         
                         <!-- Slider 03 -->
-                        <li>
+                        <!--<li>
                             <h3>Delivering Quality Education</h3>
                            <h1>AWESOME FACULTY PANEL</h1>
                              <a  href="#features-sec" class="btn btn-default btn-lg" >
@@ -87,7 +240,7 @@
                              <a  href="#features-sec" class="btn btn-info btn-lg" >
                                 FEATURE LIST
                             </a>
-                        </li>
+                        </li>-->
                         <!-- End Slider 03 -->
                     </ul>
                 </div>
@@ -109,92 +262,84 @@
            
                <div class="col-lg-12  col-md-12 col-sm-12">
                
-        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> WELCOME TO THE EDU-CENTER <i class="fa fa-circle-o-notch"></i> </h2>
+        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> Bienvenu(e) à notre plateforme de partage de documents <i class="fa fa-circle-o-notch"></i> </h2>
                    </div>
                </div>
              </div>
         
     </div>
     <!--HOME SECTION TAG LINE END-->   
-         <div id="features-sec" class="container set-pad" >
-             <div class="row text-center">
-                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">FEATURE LIST </h1>
-                     <p data-scroll-reveal="enter from the bottom after 0.3s" >
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo.
-                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo.
-                         </p>
-                 </div>
-
-             </div>
+         <div id="ancien" class="container set-pad" >
+         	<div class="row text-center">
+	         	<form action="accueil.php" method="post" name="form1" >
+					<fieldset>
+						<legend> Déjà membre : </legend> 
+					  	<label for="email">
+					  		<span>Email :</span>
+					   		<input type="email" name="email" size="30" maxlength="50" placeholder="exemple@domaine.com" id="email" />
+					   	</label>
+              <label for="password">
+					  		<span>Mot de passe :</span>
+					   		<input type="password" name="password">
+					   	</label>
+              <label>
+					   		<span>
+			 					<input type="submit" value="Envoyer" name="ancien"/>
+			 				</span>
+			 				<span>
+			 					<input type="reset" value="Annuler" />
+			 				</span>
+			 			</label>
+	 				</fieldset>
+				</form>
+			</div>
+        </div> 
+        <hr style="color:black; background-color:black; height:5px;" />
              <!--/.HEADER LINE END-->
 
-
-           <div class="row" >
-           
-               
-                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-                     <div class="about-div">
-                     <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
-                   <h3 >Quality Education</h3>
-                 <hr />
-                       <hr />
-                   <p >
-                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo . 
-                       
-                   </p>
-               <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-                </div>
-                   </div>
-                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
-                     <div class="about-div">
-                     <i class="fa fa-bolt fa-4x icon-round-border" ></i>
-                   <h3 >SYSTEMATIC APPROACH</h3>
-                 <hr />
-                       <hr />
-                   <p >
-                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo . 
-                       
-                   </p>
-               <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-                </div>
-                   </div>
-                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-                     <div class="about-div">
-                     <i class="fa fa-magic fa-4x icon-round-border" ></i>
-                   <h3 >ONE TO ONE STUDY</h3>
-                 <hr />
-                       <hr />
-                   <p >
-                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo . 
-                       
-                   </p>
-               <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-                </div>
-                   </div>
-                 
-                 
-               </div>
-             </div>
    <!-- FEATURES SECTION END-->
-    <div id="faculty-sec" >
+    <div id="nouveau" >
     <div class="container set-pad">
              <div class="row text-center">
-                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">OUR FACULTY </h1>
-                     <p data-scroll-reveal="enter from the bottom after 0.3s">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo.
-                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo.
-                         </p>
-                 </div>
-
+             	<div class="formulaireNouveau">
+					<form action="accueil.php" method="post" name="form2" >
+						<fieldset>
+							<legend> Nouveau membre : </legend>
+							<label for="prenom">
+								<span>Prénom :</span>
+                	<input type="text" class="input-field" name="prenom" placeholder="prenom" size="30" maxlength="50" id="prenom" />
+						   	</label>
+						   	<label for="nom">
+							   	<span>Nom :</span>
+                 	<input type="text" class="input-field" name="nom" size="30" placeholder="nom" maxlength="50" id="nom" />
+							</label>
+							<label for="pseudo">
+							   	<span>Pseudo :</span>
+                 	<input type="text" class="input-field" name="pseudo" size="30" placeholder="pseudo" maxlength="50" id="pseudo" />
+							</label>
+							<label for="email">
+								<span>Email :</span>
+                <input type="email" class="input-field" name="email" size="30" placeholder="exemple@domaine.com" maxlength="50" id="email" />
+							</label>
+							<label for="password">
+								<span>Mot de passe :</span>
+								<input type="password" class="input-field" name="password" id="password">
+							</label>
+							<label for="password2">
+								<span>confirmation :</span>
+                <input type="password" class="input-field" name="password2" id="password2">
+							</label>
+							<label>
+								<span>
+								   	<input type="submit" value="Envoyer" name="nouveau"/>
+								</span>
+								<span>
+				 					<input type="reset" value="Annuler" />
+				 				</span>
+				 			</label>
+		 				</fieldset>
+					</form>
+				</div>
              </div>
              <!--/.HEADER LINE END-->
 
