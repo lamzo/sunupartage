@@ -18,9 +18,7 @@ body {
     font-size: 14px;
 }
 
-.set-pad {
-    padding-top:35px;
-}
+
 .set-row-pad {
     padding-top:30px;
     padding-bottom:50px;
@@ -36,10 +34,10 @@ body {
 #menu {
     background-color: rgba(28, 43, 75, 1);
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 900;
     letter-spacing: 1px;
-    min-height: 70px;
+    min-height: 40px;
 }
 
 
@@ -51,7 +49,8 @@ body {
         color: #FFF;
         padding: 22px 10px;
     }
-
+.set-pad{
+padding-top:35px;}
 
 /*=====================================
   HOME STYLES 
@@ -69,7 +68,7 @@ body {
 
     .home-sec .overlay {
         background: rgba(38, 57, 88, 0.89);
-        min-height: 500px;
+        min-height: 300px;
     }
 
     .home-sec h1 {
@@ -357,3 +356,117 @@ input[type=submit], input[type=reset] {
  box-shadow:1px 1px 1px #D83F3D;
  cursor:pointer;
  }
+.novo_membre{
+	padding: 50px;
+	
+}
+/*******************************************************************/
+#first {
+  padding-top:35px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+#second {	
+
+  padding-top:35px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; 
+  width:100%;
+  display: none;
+}
+#bigdiv
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.colortext
+{
+color="black";
+}
+.margin_top
+{
+	margin-top: 50px;	
+}
+
+#passwordStrength
+{
+	height:10px;
+	display:block;
+	float:left;
+}
+
+.strength0
+{
+	width:250px;
+	background:#cccccc;
+}
+
+.strength1
+{
+	width:50px;
+	background:#ff0000;
+}
+
+.strength2
+{
+	width:100px;	
+	background:#ff5f5f;
+}
+
+.strength3
+{
+	width:150px;
+	background:#56e500;
+}
+
+.strength4
+{
+	background:#4dcd00;
+	width:200px;
+}
+
+.strength5
+{
+	background:#399800;
+	width:250px;
+}
+a:hover
+{
+	color:#fff;
+}
+
+#user_registration
+{
+	/*border:1px solid #cccccc;
+	margin:auto auto;
+	margin-top:100px;*/
+	width:1500px;
+}
+
+
+#user_registration label
+{
+        display: block;  /* block float the labels to left column, set a width */
+	float: left;  */
+	text-align: right; 
+	font-weight:bold;
+}
+
+#user_registration input
+{
+	width:250px;
+}
+.collerdiv{
+	float: right;
+}
+
+.cleandiv
+{
+	clear:both;
+}
