@@ -1,0 +1,574 @@
+﻿/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+.set-row-pad {
+    padding-top:30px;
+    padding-bottom:50px;
+}
+/*=====================================
+  NAVBAR STYLES 
+    ===================================*/
+
+.logo-custom {
+    max-height: 40px;
+}
+
+#menu {
+    background-color: rgba(28, 43, 75, 1);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    min-height: 40px;
+}
+
+
+.navbar-inverse {
+    border-color: transparent;
+}
+
+    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
+        color: #FFF;
+        padding: 22px 10px;
+    }
+.set-pad{
+padding-top:35px;}
+
+/*=====================================
+  HOME STYLES 
+    ===================================*/
+.home-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/header.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+    .home-sec .overlay {
+        background: rgba(38, 57, 88, 0.89);
+        min-height: 300px;
+    }
+
+    .home-sec h1 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 50px;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+    }
+
+    .home-sec h3 {
+        text-transform: uppercase;
+    }
+
+
+
+.set-flexi {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    background-color: transparent;
+    border: 0px solid #000;
+    padding-top: 120px;
+}
+
+.flex-control-nav {
+    display: none!important;
+}
+
+.set-flexi a {
+    margin: 5px;
+}
+/*=====================================
+  TAG LINE STYLES 
+    ===================================*/
+
+.tag-line {
+    background: #E9E9E9;
+    color: #000;
+}
+
+    .tag-line h2 {
+        font-size: 20px;
+        font-weight: 900;
+        padding: 5px 10px 10px 5px;
+        color: #005E5A;
+    }
+
+        .tag-line h2 > i {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+/*=====================================
+  HEADER LINE STYLES 
+    ===================================*/
+.header-line {
+    font-weight: 900;
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    color: #000;
+}
+
+h1::after {
+    content: " ";
+    border: solid 2px #2f9484;
+    display: block;
+    width: 200px;
+    margin: 12px auto;
+}
+
+/*=====================================
+  ABOUT STYLES 
+  ===================================*/
+.about-div {
+    padding: 30px;
+}
+
+.icon-round-border {
+    border: 10px double #1A94C4;
+    color: #2f9484;
+    text-align: center;
+    padding-top: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    .icon-round-border:hover {
+        color: #fff;
+        border: 10px double #fff;
+        background-color: #1A94C4;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+.about-div hr {
+    border: 1px solid #1A94C4;
+}
+
+.about-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-div p {
+    padding-top: 10px;
+}
+
+.btn-set {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin-bottom: 20px;
+}
+/*=====================================
+  FACULTY STYLES 
+  ===================================*/
+#faculty-sec {
+    background-color: #000;
+    color: #fff;
+}
+
+    #faculty-sec .header-line {
+        color: #fff;
+    }
+.faculty-div h4 {
+    line-height:30px;
+    font-weight:700;
+}
+.faculty-div {
+    padding: 30px;
+}
+
+    .faculty-div hr {
+        border: 1px solid #1A94C4;
+    }
+
+    .faculty-div h3 {
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .faculty-div p {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .faculty-div img {
+        border: 10px double #fff;
+    }
+
+/*=====================================
+  CONTACT STYLES 
+  ===================================*/
+#contact-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/contact.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+#contact-sec .overlay {
+        background: rgba(0, 0, 0, 0.76);
+        min-height: 600px;
+    }
+
+    #contact-sec h1 {
+        color:#fff;
+    }
+#contact-sec .form-control{
+    background-color:rgba(255, 255, 255, 0);
+    color:#fff;
+}
+/*============================================
+		FORMULAIRE BACKGROUND
+=======================================================*/
+/*#sunu_partage {
+    padding-top: 10px;
+    padding-bottom: 60px;
+   /* background: url(../img/php.png) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+#sunu_partage .overlay {
+        background: rgba(0, 0, 0, 0.76);
+        min-height: 600px;
+    }
+
+    #sunu_partage h1 {
+        color:#fff;
+    }
+#sunu_partage .form-control{
+    background-color:rgba(255, 255, 255, 0);
+    color:#fff;
+}
+*/
+
+
+
+/*=====================================
+  Footer STYLES 
+  ===================================*/
+#footer {
+    padding:5px 20px;
+    background-color:#2d3d5a;
+    text-align:right;
+    color:#fff;
+    font-size:15px;
+}
+
+form {
+    background-color:#FAFAFA;
+    padding:10px;
+    max-width:700px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #305A72;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-top: 50px;
+ }
+ label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+ }
+ span{
+    width: 125px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+fieldset {
+ padding:0 50px 50px 50px;
+ margin:30px 30px 30px 30px;
+ border:1px solid #DF3F3F;
+ }
+legend {
+    background: #2A88AD;
+    /*padding: 20px 30px 15px 30px;*/
+    /*margin: -30px -30px 30px -30px;*/
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+
+    /*color:#DF3F3F;*/
+    font-weight:bold
+ }
+label {
+ margin-top:10px;
+ display:block;
+ }
+label.inline {
+ display:inline;
+ margin-right:50px;
+ }
+input, textarea, select, option {
+ background-color:#FFF3F3;
+ }
+input, textarea, select {
+ padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:200px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ }
+
+ .correct {
+    border-color: rgba(68, 191, 68, 0.75);
+}
+
+.incorrect {
+    border-color: rgba(191, 68, 68, 0.75);
+}
+
+.correction {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 2px 4px;
+    border: 1px solid #555;
+    background-color: #CCC;
+    border-radius: 4px;
+}
+
+input[type=submit], input[type=reset] {
+ width:100px;
+ margin-left:5px;
+ box-shadow:1px 1px 1px #D83F3D;
+ cursor:pointer;
+ }
+.novo_membre{
+	padding: 50px;
+	
+}
+/*******************************************************************/
+#first {
+  padding-top:27px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+#second {	
+
+  padding-top:27px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; 
+  width:100%;
+  display: none;
+}
+#bigdiv
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/*************************************TYPE TEXT**********************************************/
+.textstyle
+{
+	font-family: 'Bungee Inline', cursive;
+}
+input, textarea[placeholder] 
+{
+	font-family: 'New Rocker', cursive;
+}
+.nivopassword
+{
+font-family: 'Bungee Inline', cursive;}
+.text2{
+	font-family: 'Squada One', cursive;
+}
+
+/**************************************************************************************************/
+.margin_top
+{
+	margin-top: 50px;	
+}
+
+#passwordStrength
+{
+	height:10px;
+	display:block;
+	float:left;
+}
+
+.strength0
+{
+	width:250px;
+	background:#cccccc;
+}
+
+.strength1
+{
+	width:50px;
+	background:#ff0000;
+}
+
+.strength2
+{
+	width:100px;	
+	background:#ff5f5f;
+}
+
+.strength3
+{
+	width:150px;
+	background:#56e500;
+}
+
+.strength4
+{
+	background:#4dcd00;
+	width:200px;
+}
+
+.strength5
+{
+	background:#399800;
+	width:250px;
+}
+a:hover
+{
+	color:#fff;
+}
+.conext
+{
+	position: relative;
+	top: -27px;
+	right:124px;
+	height: 43px;
+    width: 510px;
+}
+
+
+/*****************BOOSTRAP 3***************/
+/* Checkbox */
+.boxpassword
+{
+	cursor: pointer;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+input[type="checkbox"] {
+    /* IE opacity hacks */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    margin-left: 150px;
+}
+.cb-label {
+    position: relative;
+}
+.cb-label:before {
+    content: ' ';
+    
+    background: transparent url(http://blog.parkji.co.uk/images/posts/styling-checkboxes/switch.jpg) no-repeat scroll 0 0;
+    height: 41px;
+    width: 143px;
+	position: absolute;
+	top:-20px;
+    right: 0px;
+}
+input[type="checkbox"]:checked ~ .cb-label:before,
+/* the .checked class is used by IE only */
+input[type="checkbox"].checked ~ .cb-label:before {
+    background-position: 0 -40px;
+}
+/**************************** REMEMBER ME HOVER CSS ****************************************/
+body {
+    
+    font:normal 12px/1.5 Arial, sans-serif;
+	font-family:Helvetica,Arial,sans-serif;
+}
+
+/* Hover tooltips */
+.field-tip {
+    position:relative;
+    cursor:help;
+}
+    .field-tip .tip-content {
+        position:absolute;
+        top:-10px; /* - top padding */
+        right:9999px;
+        width:200px;
+        margin-right:-220px; /* width + left/right padding */
+        padding:10px;
+        color:#fff;
+        background:#2443DE;
+        -webkit-box-shadow:2px 2px 5px #aaa;
+           -moz-box-shadow:2px 2px 5px #aaa;
+                box-shadow:2px 2px 5px #aaa;
+        opacity:0;
+        -webkit-transition:opacity 250ms ease-out;
+           -moz-transition:opacity 250ms ease-out;
+            -ms-transition:opacity 250ms ease-out;
+             -o-transition:opacity 250ms ease-out;
+                transition:opacity 250ms ease-out;
+    }
+        /* <http://css-tricks.com/snippets/css/css-triangle/> */
+        .field-tip .tip-content:before {
+            content:' '; /* Must have content to display */
+            position:absolute;
+            top:50%;
+            left:-16px; /* 2 x border width */
+            width:0;
+            height:0;
+            margin-top:-8px; /* - border width */
+            border:8px solid transparent;
+            border-right-color:#2443DE;
+        }
+        .field-tip:hover .tip-content {
+            right:-20px;
+            opacity:1;
+        }
