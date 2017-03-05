@@ -1,0 +1,66 @@
+
+#portail-sec ul {
+    list-style-type: none;
+    margin-top: 5%;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: auto;
+    overflow: auto;
+}
+
+#portail-sec li a {
+    display: block;
+    color: #000;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+#portail-sec li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#portail-sec li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.content{
+    margin-left:25%;
+    margin-top: 5%;
+    min-height: 500px !important;
+    max-height: auto !important;
+}
+
+@media screen and (max-width: 1050px){
+#portail-sec ul {
+        width:auto !important;
+        height:auto !important;
+        position:relative !important;
+    }
+    #portail-sec li a {
+        float: left !important;
+        padding: 15px !important;
+    }
+    .content {
+        margin-left:0 !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #portail-sec li a {
+        text-align: center !important;
+        float: none !important;
+    }
+}
+
+#folderDiv > div > a:hover {
+    color: #2d3d5a;
+}
+
+/*
+.sidenav{
+    background-color: black;
+}*/
