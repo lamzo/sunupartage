@@ -260,29 +260,6 @@ h1::after {
 /*============================================
 		FORMULAIRE BACKGROUND
 =======================================================*/
-/*#sunu_partage {
-    padding-top: 10px;
-    padding-bottom: 60px;
-   /* background: url(../img/php.png) no-repeat center center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    color: #fff;
-    background-attachment: fixed;
-}
-#sunu_partage .overlay {
-        background: rgba(0, 0, 0, 0.76);
-        min-height: 600px;
-    }
-
-    #sunu_partage h1 {
-        color:#fff;
-    }
-#sunu_partage .form-control{
-    background-color:rgba(255, 255, 255, 0);
-    color:#fff;
-}
-*/
-
 
 
 /*=====================================
@@ -419,7 +396,7 @@ input[type=submit], input[type=reset] {
 {
 	font-family: 'Bungee Inline', cursive;
 }
-input, textarea[placeholder] 
+input, select[option], textarea[placeholder] 
 {
 	font-family: 'New Rocker', cursive;
 }
@@ -556,7 +533,7 @@ body {
              -o-transition:opacity 250ms ease-out;
                 transition:opacity 250ms ease-out;
     }
-        /* <http://css-tricks.com/snippets/css/css-triangle/> */
+       
         .field-tip .tip-content:before {
             content:' '; /* Must have content to display */
             position:absolute;
@@ -572,3 +549,72 @@ body {
             right:-20px;
             opacity:1;
         }
+/***************************CSS  BAR ACTIVE POUR NOUVEAU MEMBRE****************************/
+
+
+
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1;
+  /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
+}
+
+.displaydiv:not(:first-of-type){
+	display: none;
+	position: relative;
+}
+.novo2{
+	position: relative;
+}
+.grandvid_form
+{
+	position: relative;
+}
+.ul_textcolor{
+	color: green;
+}

@@ -9,7 +9,7 @@
 	
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Free Education Template</title>
+    <title>SUNU PARTAGE</title>
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME CSS -->
@@ -105,7 +105,7 @@
     </div>
     <!------------------------------------HOME SECTION TAG LINE END-------------------------------------->   
 		
-	<div id="sunu_partage">
+	<div id="grandvid_form">
 		<div class="overlay">
 			<div class="container set-pad " >
 				
@@ -138,9 +138,22 @@
 	<!---------------------------------------------DEUXIEME FORMULAIRE------------------------------------------------->
 					
 					
-		 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 second" id = "second">
-            <form action="accueil.php" method="post" name="form2" >
+		 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  novo2 second" id = "second">
+            <form action="accueil.php" method="post" name="form2" id = "test">
 					<legend class = "text-center textstyle"> NOUVEAU MEMBRE : </legend>
+						
+						
+						 <!-- progressbar -->
+								<!--<ul id="progressbar">
+									<li class="active ul_textcolor ">Informations Personnelles</li>
+									<li class = "ul_textcolor">Information Scolaire</li>
+									
+								</ul>-->
+						
+					<div class = "displaydiv">
+						<h2 class="text-center textstyle">Information Personnelle</h2>
+
+					
 					
                         <div class="form-group">
 						<label for="prenom"> </label>
@@ -164,8 +177,8 @@
 						
 						<div class="form-group">
 						<label for="password"></label>
-                            <input type="password" class="form-control colortext" required name="password" id="password" placeholder="Mot de passe" onkeyup="passwordStrength(this.value)" title = "doit contenir au moins un chiffre et une lettre en majuscules et minuscules et au moins 8 caractères ou plus." />
-                        </div>                                                                                                                                                              <!--pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"-->
+                            <input type="password" class="form-control colortext" required name="password" id="password" placeholder="Mot de passe" onkeyup="passwordStrength(this.value)"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title = "doit contenir au moins un chiffre et une lettre en majuscules et minuscules et au moins 8 caractères ou plus." />
+						</div>                  
 						
 						<div class="form-group">
 						<label for="password2"></label>
@@ -179,23 +192,101 @@
 							<div id="passwordStrength" class="strength0"></div>
 							<br/>
 						</p>
+								
+						<button type="submit" name="next" class="next textstyle btn btn-success btn-lg " value="Next">NEXT</button>
+						
+					</div>
+													
+						
+				<div class = "displaydiv">	
+					
+					<h2 class="text-center textstyle">Informations Scolaires</h2>
+	
 						<div class="form-group">
-							<button type="submit" name="submit" id="submit" class=" textstyle btn btn-success btn-block btn-lg" > Inscription  </button>
-							<button type="reset" class="btn btn-danger btn-block btn-lg textstyle"> Annuler </button>
+						<label for="ecole"></label>
+                            <input type="text" class="form-control colortext" required  name="pseudo" size="30" placeholder="Nom de votre Etablissement" maxlength="50" id="pseudo" pattern="[A-Za-z0-9_]{4,15}$" title="Etablissement trop court, au moins deux caractéres." />
+                        </div>
+						
+						<div class="form-group">
+						<label for="region"></label>
+							 <select name="region" class="form-control colortext" required>
+								<option value="choix" style="visibility:hidden; display:none">--- CHOIX Region ---</option>
+								<option value="dakar">Dakar</option>
+								<option value="diourbel">Diourbel</option>
+								<option value="fatick">Fatick</option>
+								<option value="kaffrine">Kaffrine</option>
+								<option value="kaoulack">Kaoulack</option>
+								<option value="kedougou">Kedougou</option>
+								<option value="kolda">Kolda</option>
+								<option value="louga">Louga</option>
+								<option value="matam">Matam</option>
+								<option value="saint-Louis">Saint-Louis</option>
+								<option value="sediou">Sediou</option>
+								<option value="tambacounda">Tambacounda</option>
+								<option value="thies">Thies</option>
+								<option value="ziguinchor">Ziguinchor</option>
+							  </select>                        
+						</div>	
+						
+												
+					<div class = "form-group">
+						<div class="bulk_action form-group">
+							<select name="action_top" class = "form-control colortext" required>
+								   <option value="" style="visibility:hidden; display:none" >-- Choix Classe --</option>
+									<option value="cm2" class="bulk_action_delete">CM2</option>
+									<option value="six" class="bulk_action_delete">Sixieme Secondaire</option>
+									<option value="cinq" class="bulk_action_delete">Cinquieme Secondaire</option>
+									<option value="quatre" class="bulk_action_delete">Quatrieme Secondaire</option>
+									<option value="trois" class="bulk_action_delete">Troisieme Secondaire</option>
+									<option value="second" class="bulk_action_target">Secondaire</option>
+									<option value="premier" class="bulk_action_target">Premiere</option>
+									<option value="term" class="bulk_action_target">Terminale</option>
+							 </select>
 						</div>
 						
-        </form>
-	</div>
+						
+						<div class = "form-group">
+							<select name="group_tag_top" class="normal_select group_tag_dynamic form-control colortext" id="group_tag" required>
+								<option selected value="0" style="visibility:hidden; display:none">-- Selectioner votre Serie --</option>
+								<option value="s2">Science Experimentale    (S2)</option>
+								<option value="s1">Science exact -Mathematique Physique -   (S1)</option>
+								<option value="g">Gestion  (G)</option>
+							</select>
+						</div>	  
+					</div>
+						
+						
+						
+						
+						
+						
+					<div class="form-group">	
+				    <label for="matiere"> Choix Multiples  (Maintient Ctrl pour selectioner)</label>
+					  <select multiple class="form-control colortext" required>
+						<option>Francais</option>
+						<option>Anglais</option>
+						<option>Histo-Geo</option>
+						<option>Mathematique</option>
+						<option>Physique-Chimie</option>
+						<option>Philosophie</option>
+						<option>Physique-Chimie</option>
+						<option>Science de la vie et de la terre (SVT)</option>
+					  </select>
+					</div>
+						
+					<button type="button" name="previous" class="previous  textstyle btn btn-success btn-lg" value="Previous" > PRECEDENT</button>
+
+					<button type="submit" name="submit" id="submit" class=" textstyle btn btn-success btn-lg" > TERMINER  </button>	
+					
+				</div>
+						
+			</form>
+	    </div>
 			
 
 			</div>
 		</div> 
 	</div>
-
-		
-		
-		
-		
 		
 
 
@@ -416,10 +507,10 @@
 						 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
 							<form action="recaptcha.php" method="post" name="" >
 								<div class="form-group">
-									<input type="text" class="form-control colortext"  required="required" placeholder="Your Name" />
+									<input type="text" class="form-control colortext "  required="required" placeholder="Your Name" />
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control colortext" required="required"  placeholder="Your Email" />
+									<input type="text" class="form-control colortext " required="required"  placeholder="Your Email" />
 								</div>
 								<div class="form-group">
 									<textarea name="message" required="required" class="form-control colortext" style="min-height: 150px;" placeholder ="Message"></textarea>
