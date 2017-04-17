@@ -134,19 +134,18 @@
                         <input type="password" class="form-control colortext" required="required" name="password" id="password" placeholder="Mot de passe" onkeypress="passwordStrength(this.value)">
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="password2"> Confirmez Password </label>
                         <input type="password" class="form-control colortext" required="required" name="password" id="password2" placeholder="Confirmez Mot de passe">
                     </div>		
-                    <p>
-                        <label for="passwordStrength"></label>
-                        <div id="passwordDescription">Force Mot de Passe</div>
-                        <div id="passwordStrength" class="strength0"></div>
-                        <br/>
-                    </p>
-                    <div class="form-group">
-                        <button type="submit" name="submit" id="submit" class="btn btn-success btn-block btn-lg"> Inscription </button>
-                        <button type="reset" class="btn btn-danger btn-block btn-lg"> Annuler </button>
+                    
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                            <button type="submit" name="submit" id="submit" class="btn btn-success btn-block btn-lg"> Inscription </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="reset" class="btn btn-danger btn-block btn-lg"> Annuler </button>
+                        </div>
                     </div>
                 </form>
             </div>				

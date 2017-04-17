@@ -1,25 +1,28 @@
-$(document).ready(function()
-    {     
-        $("#deja").click(function()
-        {
-            $("#second").slideUp("fast");
-            $('.active').removeClass('active');
-            $("#first").slideToggle("fast");
-            $(this).toggleClass("active");
-            return false;
-        });
-                                    
-        $("#visite").click(function()
-        {
-            $("#first").slideUp("fast");
-            $('.active').removeClass('active');
-            $("#second").slideToggle("fast");
-            $(this).toggleClass("active");
-            return false;
+$(document).ready(function(){     	
+	// on click signup It Hide Login Form and Display Registration Form
+	$("#deja").click(function(){
+        $("#second").slideUp("fast", function(){
+           $("#first").slideDown("fast");
+        });	
+    }); 
+	 // on click signin It Hide Registration Form and Display Login Form
+    $("#visite").click(function(){
+        $("#first").slideUp("slow",function(){
+	       $("#second").slideDown("fast");
         });
     });
-function passwordStrength(password)
-{
+
+/******************************************SCROLL DOWN TO THE FORMS *******************************************/
+ /*   $("#deja").click(function(){
+	   $('html, body').animate({scrollTop: $('#deja').offset().top}, 3000);
+    });
+    
+    $("#visite").click(function(){
+        $('html, body').animate({scrollTop: $('#visite').offset().top}, 3000);
+	});*/
+});
+
+function passwordStrength(password){ 
 	var desc = new Array();
 	desc[0] = "Trés faible";
 	desc[1] = "Faible";
